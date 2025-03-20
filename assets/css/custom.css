@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    src: url('/fonts/Poppins-Regular.ttf');
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15pt;
+}
+

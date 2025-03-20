@@ -1,0 +1,29 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = ""
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "logo/xcl-logo-transparent.png"
+  secondaryLogo = "logo/xcl-logo-inv-transparent.png"
+  description = "The engineering and tech blog for Extracellular."
+  copyright = "Copyright Extracellular Ltd. 2024"
+
+
+[params.author]
+  name = "Alex Tolenaar"
+  email = "alext@extracellular.com"
+  image = "headshot/alex.jpg"
+  imageQuality = 96
+  headline = "Tech Lead"
+  bio = ""
+  links = [
+    { email = "mailto:alext@extracellular.com" },
+    { link = "https://extracellular.com/" },
+    { github = "https://github.com/alext-extracellular" },
+   ]
