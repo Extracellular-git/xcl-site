@@ -29,7 +29,7 @@ Ellen and team came to the me with the idea, and it was my task to make a workin
 
 ## Planning
 
-Previously when we had been looking to create a system that could control a pump to maintain a desired setpoint of vessel mass, I had looked at several off-the-shelf options. Someone in a nearby lab had a masterflex pump setup with a system that used a specific combination of pump, scale and software running on a windows tablet to achieve the goal. Systems like this can cost nearly £10k.
+Previously when we had been looking to create a system that could control a pump to maintain a desired setpoint of vessel mass, I had looked at several off-the-shelf options. Someone in a nearby lab had a masterflex pump setup with a system that used a specific combination of pump, scale and software running on a windows tablet to achieve the goal. Systems like this can cost several thousand.
 I quickly realised that we would need to build something ourselves in order to meet the cost and speed requirements.
 
 ### Analogue or Digital?
@@ -38,7 +38,7 @@ Most of the pump suppliers for lab and process pumps offer only analogue control
 
 However I still had a bad feeling about this.
 Sending out an analogue signal would mean that the controller would not actually know the rpm of the pump; it just seemed a bit archaic to me.
-I was already disenfranchised with the world of OT (as you will see in other articles)
+I was already disenfranchised with the world of OT (as you will see in other articles).
 
 {{< figure
     src="pumpcontrol.png"
@@ -73,7 +73,7 @@ Armed with my new modular controller, I created input and output configurations 
 
 So for the harvest line, the input was the Aber probe capacitance reading, the controller was a PID algorithm, and the output actuator was the harvest line pump that removes media from the reactor and into a harvest bag.
 
-The software runs on a typical "mini pc" that you can get online, with Debian as the OS. It is running on a UPS for backup power supply. Even low end modern CPUs are capable of doing billions of operations per second, so much faster than an average PLC. In our experience, they are also perfectly reliable to run for months with no intervention[^5]. We use modern IT infrastructure monitoring software like Netdata to monitor the health of all of our control nodes. Another advantage of using a PC over a PLC is that I can ssh into the pc from anywhere and fix anything that might come up.
+The software runs on a typical "mini pc" that you can get online, with Debian as the OS. It is running on a UPS for backup power supply. Even low end modern CPUs are capable of doing billions of operations per second, so can be theoretically faster than an average PLC. In our experience, they are also perfectly reliable to run for months with no intervention[^5]. We use modern IT infrastructure monitoring software like Netdata to monitor the health of all of our control nodes. Another advantage of using a PC over a PLC is that I can ssh into the pc from anywhere and fix anything that might come up.
 
 After some experimentation to get the right PID tunings and ironing out some bugs, we were ready to roll.
 
